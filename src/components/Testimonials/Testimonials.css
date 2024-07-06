@@ -1,0 +1,8 @@
+.feeb_back_des::before {
+  content: url("https://gk.digital/assets/img/left-quotes.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* width: 100px;
+  height: 100px; */
+}

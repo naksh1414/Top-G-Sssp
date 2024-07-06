@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+.slick-prev {
+  z-index: 10 !important;
+
+  /* margin-left: -500px; */
+  /* background-color: aqua; */
+}
+
+.slick-dots li button:last-child {
+  box-shadow: none;
+}
+
+@media (width < 650px) {
+  .nnn {
+    margin-right: 15%;
+    display: flex;
+    /* justify-content: end; */
+    /* background-color: aqua; */
+  }
+  button.slick-arrow.slick-next {
+    margin-right: 15%;
+    display: flex;
+    /* justify-content: end; */
+    /* background-color: aqua; */
+  }
+  button.slick-arrow.slick-next::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.slick-dots li {
+  width: 5px;
+}
