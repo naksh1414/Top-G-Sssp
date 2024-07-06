@@ -40,11 +40,17 @@ export default function NavDrawer() {
             <ListItemButton>
               <ListItemIcon>
                 {index === 0 ? (
-                  <FaHome />
+                  <a href="/">
+                    <FaHome />
+                  </a>
                 ) : index === 2 ? (
-                  <LuContact />
+                  <a href="#">
+                    <LuContact />
+                  </a>
                 ) : (
-                  <MdOutlineMiscellaneousServices />
+                  <a href="/services">
+                    <MdOutlineMiscellaneousServices />
+                  </a>
                 )}
               </ListItemIcon>
 
