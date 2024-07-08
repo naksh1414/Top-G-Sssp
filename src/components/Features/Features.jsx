@@ -1,4 +1,5 @@
 import feature_pic_1 from "../../assets/home_digital_img.png";
+import { NavLink } from "react-router-dom";
 function Features() {
   const cards = [
     {
@@ -8,6 +9,7 @@ function Features() {
       button_link: "",
       order1: 1,
       order2: 2,
+      link: "/",
     },
     {
       image: feature_pic_1,
@@ -16,6 +18,7 @@ function Features() {
       button_link: "",
       order1: 2,
       order2: 1,
+      link: "/services",
     },
     {
       image: feature_pic_1,
@@ -24,6 +27,7 @@ function Features() {
       button_link: "",
       order1: 1,
       order2: 2,
+      link: "/",
     },
   ];
 
@@ -52,9 +56,11 @@ function Features() {
             <p className="text-md lg:text-lg mb-5 text-gray-500 ">
               {card.para}
             </p>
-            <button className=" text-white py-3 font-semibold bg-blue-500 rounded-full">
-              Read More
-            </button>
+            <NavLink to={card.link}>
+              <button className=" text-white py-3 font-semibold bg-blue-500 rounded-full">
+                Read More
+              </button>
+            </NavLink>
           </div>
         </div>
       ))}
