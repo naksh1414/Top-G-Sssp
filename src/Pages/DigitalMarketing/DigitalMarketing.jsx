@@ -103,7 +103,7 @@ function DigitalMarketing() {
             </div>
 
             <a
-              className="py-2 absolute -bottom-24 md:bottom-10 left-1/2 translate-x-[-50%] px-4 md:px-8 rounded-full bg-[#d7ff55] text-black flex items-center pointer-events-auto cursor-pointer z-10"
+              className="py-2 absolute -bottom-24 md:bottom-10 left-1/2 translate-x-[-50%] px-4 md:px-8 rounded-full bg-[#d7ff55] text-black flex items-center pointer-events-auto cursor-pointer z-10 w-[55%] md:w-[30%] lg:w-[15%] justify-center"
               href="tel:918013930002"
             >
               <FaPhoneAlt className="mr-2 md:mr-3" />
