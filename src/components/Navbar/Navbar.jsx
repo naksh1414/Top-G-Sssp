@@ -27,7 +27,9 @@ const Navbar = () => {
           </div>
           {/* Logo div  */}
           <div className="w-full">
-            <img className="h-[60px]" src={NavLogo} alt="Nav-Logo" />
+            <NavLink to={"/"}>
+              <img className="h-[60px]" src={NavLogo} alt="Nav-Logo" />
+            </NavLink>
           </div>
           {/* Login signup buttons  */}
           <div className="">
@@ -37,7 +39,9 @@ const Navbar = () => {
         {/* navbar for smaller screens like mobiles  */}
         <div className="flex md:hidden w-full">
           <div className="flex justify-between items-center w-full px-2">
-            <img className=" h-12 w-12" src={NavLogo} alt="logo" />
+            <NavLink to={"/"}>
+              <img className=" h-12 w-12" src={NavLogo} alt="logo" />
+            </NavLink>
             <NavDrawer />
             {/* <a href="">
               <HiOutlineMenuAlt2 className="text-white h-12 w-12" />

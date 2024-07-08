@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import feature_pic_1 from "../../assets/home_digital_img.png";
+import neighbor from "../../assets/Features/neighbor.png";
+import callertune from "../../assets/Features/home_callertune_img.png";
 // import { NavLink } from "react-router-dom";
 function Features() {
   const cards = [
@@ -13,7 +15,7 @@ function Features() {
       link: "/",
     },
     {
-      image: feature_pic_1,
+      image: neighbor,
       heading: `Fingerprinting & Neighborhood rights`,
       para: "Many of the entitlements slip through the cracks every day and become unclaimed, unattributed, unmatched, copied, and undistributed for many reasons. We, at GK Digital, offer the extensive study of the global music licensing ecosystem.",
       button_link: "",
@@ -22,7 +24,7 @@ function Features() {
       link: "/services",
     },
     {
-      image: feature_pic_1,
+      image: callertune,
       heading: "Caller tune Distribution",
       para: "Who doesn’t want their favourite song as their caller tune? Get your song made available for hello tunes and caller tunes with our close association with mobile service operators.",
       button_link: "",
