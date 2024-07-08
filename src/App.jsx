@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Home from "./Pages/Home/Home";
 import Services from "./Pages/Services/Services";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DigitalMarketing from "./Pages/DigitalMarketing/DigitalMarketing";
 function App() {
   // useEffect(() => {
   //   const arrow = document.querySelectorAll(".slick-next");
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/digital-marketing" element={<DigitalMarketing />} />
       </Routes>
       <Footer />
     </Router>

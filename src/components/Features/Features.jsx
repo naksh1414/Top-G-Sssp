@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import feature_pic_1 from "../../assets/home_digital_img.png";
 function Features() {
   const cards = [
@@ -52,9 +53,17 @@ function Features() {
             <p className="text-md lg:text-lg mb-5 text-gray-500 ">
               {card.para}
             </p>
-            <button className=" text-white py-3 font-semibold bg-blue-500 rounded-full">
-              Read More
-            </button>
+            <NavLink
+              to={`${
+                card.heading == "Fingerprinting & Neighborhood rights"
+                  ? "/services"
+                  : "/digital-marketing"
+              }`}
+            >
+              <button className=" text-white py-3 font-semibold bg-blue-500 rounded-full">
+                Read More
+              </button>
+            </NavLink>
           </div>
         </div>
       ))}
