@@ -7,7 +7,6 @@ import tiktok from "../../assets/tik-tok-logo.webp";
 import resso from "../../assets/resso.jpeg";
 import jio from "../../assets/jiosavaan.jpeg";
 import { NavLink } from "react-router-dom";
-
 import "./Platform.css";
 function Platforms() {
   return (

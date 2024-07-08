@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import feature_pic_1 from "../../assets/home_digital_img.png";
+// import { NavLink } from "react-router-dom";
 function Features() {
   const cards = [
     {
@@ -9,6 +10,7 @@ function Features() {
       button_link: "",
       order1: 1,
       order2: 2,
+      link: "/",
     },
     {
       image: feature_pic_1,
@@ -17,6 +19,7 @@ function Features() {
       button_link: "",
       order1: 2,
       order2: 1,
+      link: "/services",
     },
     {
       image: feature_pic_1,
@@ -25,6 +28,7 @@ function Features() {
       button_link: "",
       order1: 1,
       order2: 2,
+      link: "/",
     },
   ];
 
