@@ -1,5 +1,9 @@
+
 import Carousel from "../../components/Carousel/Carousel";
+
+
 const Hero = () => {
+  
   return (
     <div>
       <Carousel />

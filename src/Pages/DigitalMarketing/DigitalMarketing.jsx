@@ -11,8 +11,13 @@ import meme from "../../assets/digitalMarketing/meme.png";
 import management from "../../assets/digitalMarketing/management.png";
 import content from "../../assets/digitalMarketing/content.png";
 import campaign from "../../assets/digitalMarketing/campaigns.png";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 function DigitalMarketing() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
   const card1Data = [
     {
       img: sharingMusing,
