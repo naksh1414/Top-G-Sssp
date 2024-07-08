@@ -11,7 +11,7 @@ import meme from "../../assets/digitalMarketing/meme.png";
 import management from "../../assets/digitalMarketing/management.png";
 import content from "../../assets/digitalMarketing/content.png";
 import campaign from "../../assets/digitalMarketing/campaigns.png";
-import { color } from "@mui/system";
+
 function DigitalMarketing() {
   const card1Data = [
     {
@@ -102,10 +102,13 @@ function DigitalMarketing() {
               </h2>
             </div>
 
-            <button className="py-2 absolute -bottom-24 md:bottom-10 left-1/2 translate-x-[-50%] px-8 rounded-full bg-[#d7ff55] text-black">
+            <a
+              className="py-2 absolute -bottom-24 md:bottom-10 left-1/2 translate-x-[-50%] px-8 rounded-full bg-[#d7ff55] text-black flex items-center pointer-events-auto cursor-pointer z-10"
+              href="tel:918013930002"
+            >
               <FaPhoneAlt className="mr-3" />
               Schedule a Call
-            </button>
+            </a>
           </div>
         </main>
       </section>
