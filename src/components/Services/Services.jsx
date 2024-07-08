@@ -1,4 +1,10 @@
-import img from "../../assets/wordwide1.png";
+import img from "../../assets/Services/wordwide1.png";
+import img1 from "../../assets/Services/musicmarketingmediaa.png";
+import img2 from "../../assets/Services/personalassistance.png";
+import img3 from "../../assets/Services/paticles.png";
+import img4 from "../../assets/Services/youtubemonitizess.png";
+import img5 from "../../assets/Services/callertuneservice1.png";
+
 function Services() {
   const services = [
     {
@@ -15,21 +21,21 @@ function Services() {
         "Don’t worry about the technicalities, just focus on being creative with your music and leave the rest to us. We got you. Reach the right kind of audience by well-established network of artists, promotion of the track through Instagram reels by renowned influencers and promotion through YouTube google AdSense ads to drive more traffic.",
         "Get those extra clicks on your profile with our assistance and make your song go viral with our unique promotion strategy.",
       ],
-      image: img,
+      image: img1,
     },
     {
       heading: "Personal Assistant",
       para: [
         "Get in touch with our dedicated customer executives for any issues you might be facing. We Offer 1:1 customer support. Don’t you worry, you won’t be chatting with any bots but real humans who will understand your problems and provide you solutions in real time.",
       ],
-      image: img,
+      image: img2,
     },
     {
       heading: "Protect your music rights",
       para: [
         "Your track’s ready? Let’s get you your music rights and claim royalty from throughout the world. Through our established community, we obtain data about unclaimed music rights and claim royalty from wherever your content is being used. Throughout all TV Stations, Radio and anywhere your music is played.",
       ],
-      image: img,
+      image: img3,
     },
     {
       heading: "Youtube Monetisation",
@@ -37,7 +43,7 @@ function Services() {
         "Take command of your YouTube marketing plan with our advanced back-end structure allowing you to monetise your content.",
         "We manage all of our artists and label channels through our multi channel network so you don’t have to worry about anything other than your passion.",
       ],
-      image: img,
+      image: img4,
     },
     {
       heading: "Caller tune and CRBT distribution",
@@ -46,7 +52,7 @@ function Services() {
         "Get your song made available for hello tunes and caller tunes with our close association with mobile service operators.",
         "Get your song made available for hello tunes with our close association with mobile service operators. Make people wait patiently while listening to your song.",
       ],
-      image: img,
+      image: img5,
     },
   ];
   return (
@@ -58,22 +64,26 @@ function Services() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col lg:flex-row items-center w-[95%] lg:w-4/5 bg-[#c6e6ff] p-10 rounded-3xl "
+            className="flex flex-col lg:flex-row items-center w-[95%] lg:w-4/5 bg-[#ddf0ff] p-10 rounded-3xl "
           >
-            <div className="pr-3 order-2 lg:order-1 mt-5 lg:mt-0">
+            <div className="lg:w-[60%] pr-3 order-2 lg:order-1 mt-5 lg:mt-0">
               <h1 className=" font-bold text-2xl lg:text-3xl mb-5">
                 {service.heading}
               </h1>
               {service.para.map((para, index) => (
                 <p
-                  className="mb-2 text-md lg:text-lg text-gray-500 font-medium"
+                  className="mb-2 text-md lg:text-lg text-gray-500 font-light"
                   key={index}
                 >
                   {para}
                 </p>
               ))}
             </div>
-            <img className="order-1 lg:order-2" src={service.image} alt="" />
+            <img
+              className="order-1 lg:order-2 lg:w-[40%]"
+              src={service.image}
+              alt=""
+            />
           </div>
         ))}
       </div>
