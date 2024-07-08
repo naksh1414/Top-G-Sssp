@@ -6,12 +6,13 @@ import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
+// import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { FaHome } from "react-icons/fa";
-import { MdOutlineMiscellaneousServices } from "react-icons/md";
-import { LuContact } from "react-icons/lu";
+// import { FaHome } from "react-icons/fa";
+// import { MdOutlineMiscellaneousServices } from "react-icons/md";
+// import { LuContact } from "react-icons/lu";
+import { NavLink } from "react-router-dom";
 export default function NavDrawer() {
   const [open, setOpen] = React.useState(false);
 
@@ -20,7 +21,11 @@ export default function NavDrawer() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box
+      sx={{ width: 250, paddingTop: 5, paddingLeft: 3 }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
       {/* <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem key={text} disablePadding>
@@ -35,29 +40,40 @@ export default function NavDrawer() {
       </List> */}
       <Divider />
       <List>
-        {["Home", "Services", "Contact"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index === 0 ? (
-                  <a href="/">
-                    <FaHome />
-                  </a>
-                ) : index === 2 ? (
-                  <a href="#">
-                    <LuContact />
-                  </a>
-                ) : (
-                  <a href="/services">
-                    <MdOutlineMiscellaneousServices />
-                  </a>
-                )}
-              </ListItemIcon>
+        {["Home", "Services", "Contact", "Digital Marketing"].map(
+          (text, index) => (
+            <NavLink
+              key={text}
+              to={`${
+                index == 0
+                  ? "/"
+                  : index == 1
+                  ? "/services"
+                  : index == 2
+                  ? ""
+                  : "digital-marketing"
+              }`}
+            >
+              <ListItem disablePadding>
+                <ListItemButton>
+                  {/* <ListItemIcon>
+                    {index === 0 ? (
+                      <FaHome />
+                    ) : index === 2 ? (
+                      <LuContact />
+                    ) : (
+                      <NavLink href="/digital-marketing">
+                        <MdOutlineMiscellaneousServices />
+                      </NavLink>
+                    )}
+                  </ListItemIcon> */}
 
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+                  <ListItemText primary={text} />
+                </ListItemButton>
+              </ListItem>{" "}
+            </NavLink>
+          )
+        )}
       </List>
     </Box>
   );

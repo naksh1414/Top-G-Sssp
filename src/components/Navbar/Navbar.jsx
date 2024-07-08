@@ -13,13 +13,10 @@ const Navbar = () => {
           {/* Nav options */}
           <div className="w-full  text-white font-semibold">
             <ul className="w-full flex flex-row justify-between">
-              <li className=" flex w-[65%] justify-between items-center space-x-4 text-[1rem]">
-                <NavLink to={"/"}>
-                  <a href="">Home</a>
-                </NavLink>
-                <NavLink to={"/services"}>
-                  <a href="">Services</a>
-                </NavLink>
+              <li className=" flex w-[85%] justify-between items-center space-x-4 text-[1rem]">
+                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/services"}>Services</NavLink>
+                <NavLink to={"/digital-marketing"}>Digital Marketing</NavLink>
                 <a href="#footer">Contact</a>
                 {/* <a href="#">+9999999999</a> */}
               </li>
@@ -43,7 +40,7 @@ const Navbar = () => {
               <img className=" h-12 w-12" src={NavLogo} alt="logo" />
             </NavLink>
             <NavDrawer />
-            {/* <a href="">
+            {/*
               <HiOutlineMenuAlt2 className="text-white h-12 w-12" />
             </a> */}
           </div>
