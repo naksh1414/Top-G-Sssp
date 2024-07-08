@@ -104,14 +104,13 @@ export default function Foot() {
               <p className="mb-4 font-semibold dark:font-medium">
                 <span>📞 </span>{" "}
                 <span className="font-medium dark:font-light">
-                  +91 9876558205
+                  +91 8013930002
                 </span>
               </p>
               <p className="font-semibold flex dark:font-medium">
                 <span>✉️ </span>
                 <p className="font-medium flex flex-col dark:font-light">
-                  <span className="ml-1">gurioye@TopG</span>
-                  <span className="ml-1">aman@TopG</span>
+                  <span className="ml-1">topgmedia315@gmail.com</span>
                 </p>
               </p>
             </div>
