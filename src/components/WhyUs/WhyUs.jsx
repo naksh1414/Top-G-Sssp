@@ -1,4 +1,7 @@
 import mic from "../../assets/live-music.svg";
+import Dollar from "../../assets/Features/dollar.svg";
+import report from "../../assets/Features/reportingtr.svg";
+import rights from "../../assets/Features/rights.svg";
 import "./WhyUs.css";
 function WhyUs() {
   const cards = [
@@ -9,17 +12,17 @@ function WhyUs() {
         "Get your music live everywhere easily and get your royalties rolling as soon as the music is made live with our super lightening service.",
     },
     {
-      image: mic,
+      image: rights,
       main_text: "100% RIGHTS",
       hidden_text: "All the rights to your song remain yours.",
     },
     {
-      image: mic,
+      image: report,
       main_text: "REPORTING",
       hidden_text: "Get monthly analytics reports with all the statistics.",
     },
     {
-      image: mic,
+      image: Dollar,
       main_text: "NO HIDDEN COSTS",
       hidden_text: "Free UPC and ISRC code for every release.",
     },
@@ -28,7 +31,7 @@ function WhyUs() {
     <div className="bg-[#1883AA] text-white flex flex-col justify-center items-center py-10">
       <h1 className=" font-extrabold mb-5 text-3xl lg:text-5xl">Why Top-G?</h1>
       <p className="text-sm lg:text-lg w-[90%] lg:w-[60%] text-center mb-5 font-medium">
-        GK Digital has been established for labels and artists worldwide for
+        TopG has been established for labels and artists worldwide for
         over a decade. Since 2017, we have always made it our mission to make
         our artists reach the top of the game.
       </p>

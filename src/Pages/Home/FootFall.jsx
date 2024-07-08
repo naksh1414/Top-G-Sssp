@@ -16,7 +16,7 @@ const FootFall = () => {
             <IoFootstepsSharp className="h-6 w-6 md:h-20 md:w-20 -mb-2 text-blue-500" />
             <Counter count={2000} />
             <p className="text-white lg:px-5 px-1 w-full text-[0.6rem] md:text-lg text-center -mt-2">
-              Artists & music labels Working With GK Digital
+              Artists & music labels Working With TopG
             </p>
           </div>
           <div className="bg-[#ffffff00] h-[7rem] lg:h-[13rem] w-[6rem] lg:w-[23rem] rounded-lg flex flex-col justify-center items-center relative backdrop-blur-md md:p-5">

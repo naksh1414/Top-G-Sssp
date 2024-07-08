@@ -1,5 +1,4 @@
 import feature_pic_1 from "../../assets/home_digital_img.png";
-
 function Features() {
   const cards = [
     {

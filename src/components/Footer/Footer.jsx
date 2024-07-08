@@ -23,10 +23,10 @@ export default function Foot() {
         <div className="upperfoot bg-white dark:bg-black z-10 py-5 lg:p-8 border-b-[1px] border-b-[#8a8a8a92] flex justify-between w-full">
           <div className="box flex flex-col lg:flex-col items-start w-[90%] lg:w-[33%]">
             <img src={logo} className="w-20 h-20" alt="" />
-            <p className="text-md mb-2 font-medium dark:font-light my-5">
+            {/* <p className="text-md mb-2 font-medium dark:font-light my-5">
               Gk Digital provides Services such as, Digital Content Management
               Distribution, Online Marketing and Brand Building Marketing.
-            </p>
+            </p> */}
 
             <div className="handle flex flex-row items-center mt-5 justify-between w-[70%] lg:w-[50%] ">
               <a href="" target="_blank" rel="noreferrer">
@@ -97,7 +97,7 @@ export default function Foot() {
               <p className="mb-3 font-medium dark:font-light flex lg:w-[80%]">
                 <span>📍</span>
                 <p>
-                  GK DIGITAL, SCO 43, 2nd Floor Jubilee Square, Block E, Gmada
+                  TopG, SCO 43, 2nd Floor Jubilee Square, Block E, Gmada
                   Aerocity, Sahibzada Ajit Singh Nagar, Punjab 160055
                 </p>
               </p>
@@ -110,8 +110,8 @@ export default function Foot() {
               <p className="font-semibold flex dark:font-medium">
                 <span>✉️ </span>
                 <p className="font-medium flex flex-col dark:font-light">
-                  <span className="ml-1">gurioye@gk.digital</span>
-                  <span className="ml-1">aman@gk.digital</span>
+                  <span className="ml-1">gurioye@TopG</span>
+                  <span className="ml-1">aman@TopG</span>
                 </p>
               </p>
             </div>

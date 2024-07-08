@@ -1,4 +1,11 @@
 import spotify from "../../assets/Spotify-Logo-PNG.png";
+import itunes from "../../assets/OIP.jpeg"
+import youtube from "../../assets/youtube.jpeg"
+import hungama from "../../assets/hungama.jpeg"
+import apple from "../../assets/Apple-Music-Logo-2015-present.png"
+import tiktok from "../../assets/tik-tok-logo.webp"
+import resso from "../../assets/resso.jpeg"
+import jio from "../../assets/jiosavaan.jpeg"
 import "./Platform.css";
 function Platforms() {
   return (
@@ -11,25 +18,25 @@ function Platforms() {
           <img className="w-44 h-14" src={spotify} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={itunes} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={youtube} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={hungama} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={apple} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={tiktok} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-contain" src={resso} alt="" />
         </div>
         <div className="bg-white py-14 px-16 rounded-2xl cursor-pointer hover:scale-[1.05] transition-all duration-100 ease-in-out">
-          <img className="w-44 h-14" src={spotify} alt="" />
+          <img className="w-44 h-14 object-cover" src={jio} alt="" />
         </div>
       </div>
       <button className="mt-8 py-2 text-white hover:-translate-y-2 transition-all duration-150 ease-in-out font-semibold bg-blue-500 w-[10%] rounded-full">
